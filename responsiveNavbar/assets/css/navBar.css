@@ -1,0 +1,96 @@
+  .primary-header {
+    align-items: center;
+    justify-content: space-between; /* Push Logo to left, Nav-List to right */
+    color: white;
+    background: var(--brand_black);
+    box-shadow: 5px 10px 16px 10px rgba(0,0,0,0.25);
+  }
+  
+  .main-navigation {
+    list-style: none;
+  
+    padding: 1rem;
+    align-items: center;
+  
+    font-family: var(--primary-font), sans-serif;
+    font-weight: 700;
+    
+    border-radius: .75rem 0 0 .75rem;
+  }
+
+  .main-navigation li {
+    margin-inline-end: 0.75rem;
+  }
+
+  .main-navigation span { /*Numbers in Nav*/
+    font-weight: 700;
+    color: var(--brand_black);
+  }
+
+  .main-navigation .navlink {
+    font-family: var(--secondary-font);
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+  }
+
+  .logo-icon-header {
+    height: 2.5rem;
+    margin: 1rem;
+  }
+
+  .mobile-nav-toggle {
+    display: none; /* Nav Toggle is removed from DOM on desktop */
+  }
+
+  @media (max-width: 35em) {
+
+    .primary-header {
+      background-color: transparent;
+      box-shadow: none;
+    }    
+    
+    .main-navigation {
+      background: var(--brand_black);
+    
+      position: fixed;
+      inset: 0 0 0 30%; /* Controls "width" of mobile nav component */
+      
+      flex-direction: column;
+      padding: min(20vh, 10rem) 3em; /* Min-Function for Padding to improve landscape mode of mobile devices */
+      
+      align-items: baseline;
+      
+      transform: translateX(100%); /* Per Default main navigation is pushed out of viewport (to the right) so user can´t see */
+      transition: transform 350ms ease-out;
+    }
+    
+    /* navBar.js looks if data-visible is true. if user clicks on navtoggle data visible is set to true. if true then, the nav-slides out. */
+    .main-navigation[data-visible="true"] {
+      transform: translateX(0%);
+    }
+  
+    /* Per default -> Closed-Icon is displayed. */
+    .mobile-nav-toggle {
+      
+      position: relative; /* Necessary to put toggle to front, because Z-Index doesn´t work with position fixed of parent*/
+      display: block;
+      
+      background: url('../img/menu_icon/hamburger_closed.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      margin: 1rem;
+      width: 3rem;
+      aspect-ratio: 1;
+      border: 0;
+    }
+    
+    /* When aria-expanded is set to true by navbar.js -> other toggle-icon is displayed*/
+    .mobile-nav-toggle[aria-expanded="true"] {
+      background: url('../img/menu_icon/actual_hamburger.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 3rem;
+    }
+  }

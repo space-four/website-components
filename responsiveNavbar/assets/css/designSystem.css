@@ -1,0 +1,159 @@
+:root {
+  --brand_black: #0e1111;
+  --primary-font: 'Nunito'
+}
+
+/* Button-Styles*/
+
+.button-primary {
+  background-color: #d1a101;
+  font-family: 'Russo One', sans-serif;
+  font-size: 14px;
+  border: 3px solid #F6BE00;
+  border-radius: 2px;
+  color: #002f3c ;
+  box-shadow: 6px 5px 0px 0px #28303D;
+  margin-right: 20px;
+  padding: 10px 10px;
+  min-width: 80px;
+  opacity: 0.9;
+}
+
+.button-primary:hover {
+  opacity: 1;
+}
+
+/* Paragraph-Styles */
+
+p {
+  font-family: Nunito, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0;
+  font-weight: 300;
+
+  color: #28303D;
+
+  line-height: 1.5em;
+}
+
+/* Headline-Styles */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Prompt, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+
+  color: #060f12;
+
+  padding: 0px 0px;
+} 
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+.hero-headline {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.lighter-headline {
+  font-weight: 400;
+}
+
+.fontcolor-darkmode {
+  color: white;
+}
+
+.accent-headline {
+  font-family: 'Russo One', sans-serif;
+  color: #6247aa;
+  text-transform: lowercase;
+  font-size: 18px;
+}
+
+/* Card-Styles */
+
+.box-shadow {
+  box-shadow: 0px 8px 16px 0px rgba(6,15,18,0.24);
+}
+
+.border-radius {
+  border-radius: 25px;
+}
+
+/* Colors */
+
+.background-accent-color-one {
+  background: #6247aa;
+}
+
+.background-accent-color-two {
+  background: #F9AC2F;
+}
+
+.background-primary {
+  background: #102b2f;
+}
+
+.background-space-black {
+  background: #060f12;
+}
+
+.background-dark-grey {
+  background: #28303D;
+}
+
+.background-light-grey {
+  background: #54595F;
+}
+
+.background-noble-green {
+  background: #062726
+}
+
+
+@media all and (max-width: 800px) {
+
+  h1 {
+      font-size: 24px;
+    }
+    
+    h2, h3 {
+      font-size: 20px;
+    }
+  
+    h4, h5, h6 {
+      font-size: 16px;
+    }
+  
+    p {
+      font-size: 15px;
+    }
+  
+    .accent-headline {
+      font-size: 14px;
+    }
+  
+  }

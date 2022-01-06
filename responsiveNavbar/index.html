@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <title>Responsive Navbar</title>
+      
+        <link rel="stylesheet" href="../responsiveNavbar/assets/css/index.css">
+        <link rel="stylesheet" href="../responsiveNavbar/assets/css/navBar.css">
+        <link rel="stylesheet" href="../responsiveNavbar/assets/css/designSystem.css">
+      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      
+        <script src="navBar.js" defer></script>
+      
+      </head>
+
+      <body>
+
+        <header class="primary-header flex">
+            
+            <a href="index.html"><img src="../responsiveNavbar/assets/logo/space four_RGB_weiss.png" class="logo-icon-header"></a>
+    
+            <nav>
+                <ul data-visible="false" class="main-navigation flex">
+                    <li><a class="navlink" href="#">Item 1</a></li>
+                    <li><a class="navlink" href="#">Item 2</a></li>
+                    <li><a class="navlink" href="#">Item 3</a></li>
+                    <li><a class="navlink" href="#">Item 4</a></li>
+                    <li><button class="button button-primary"><a href="#">CTA</a></button></li>
+                </ul>
+
+                <button class="mobile-nav-toggle" aria-controls="main-navigation" aria-expanded="false"></button>
+            </nav>
+        </header>
+
+      </body>
+</html>
