@@ -3,7 +3,6 @@
     justify-content: space-between; /* Push Logo to left, Nav-List to right */
     color: white;
     background: var(--brand_black);
-    box-shadow: 5px 10px 16px 10px rgba(0,0,0,0.25);
   }
   
   .main-navigation {
@@ -14,12 +13,11 @@
   
     font-family: var(--primary-font), sans-serif;
     font-weight: 700;
-    
-    border-radius: .75rem 0 0 .75rem;
   }
 
   .main-navigation li {
     margin-inline-end: 0.75rem;
+    font-size: 16px;
   }
 
   .main-navigation span { /*Numbers in Nav*/
@@ -35,7 +33,7 @@
   }
 
   .logo-icon-header {
-    height: 2.5rem;
+    height: 1.75rem;
     margin: 1rem;
   }
 
@@ -47,14 +45,13 @@
 
     .primary-header {
       background-color: transparent;
-      box-shadow: none;
     }    
     
     .main-navigation {
       background: var(--brand_black);
     
       position: fixed;
-      inset: 0 0 0 30%; /* Controls "width" of mobile nav component */
+      inset: 0 0 0 40%; /* Controls "width" of mobile nav component */
       
       flex-direction: column;
       padding: min(20vh, 10rem) 3em; /* Min-Function for Padding to improve landscape mode of mobile devices */
@@ -72,7 +69,6 @@
   
     /* Per default -> Closed-Icon is displayed. */
     .mobile-nav-toggle {
-      
       position: relative; /* Necessary to put toggle to front, because Z-Index doesn´t work with position fixed of parent*/
       display: block;
       
