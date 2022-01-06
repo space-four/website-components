@@ -2,7 +2,7 @@
     align-items: center;
     justify-content: space-between; /* Push Logo to left, Nav-List to right */
     color: white;
-    background: var(--brand_black);
+    background: var(--brand-black);
   }
   
   .main-navigation {
@@ -22,11 +22,10 @@
 
   .main-navigation span { /*Numbers in Nav*/
     font-weight: 700;
-    color: var(--brand_black);
+    color: var(--brand-black);
   }
 
   .main-navigation .navlink {
-    font-family: var(--secondary-font);
     text-decoration: none;
     color: white;
     font-weight: 400;
@@ -48,7 +47,7 @@
     }    
     
     .main-navigation {
-      background: var(--brand_black);
+      background: var(--brand-black);
     
       position: fixed;
       inset: 0 0 0 40%; /* Controls "width" of mobile nav component */

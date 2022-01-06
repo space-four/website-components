@@ -1,20 +1,51 @@
+/* Design System Basics */
+
 :root {
-  --brand_black: #0e1111;
-  --primary-font: 'Nunito'
+  --primary-font: 'Nunito Sans';
+  --secondary-font: 'Russo One';
+
+  --brand-black: #0e1111;
+
+  --primary-color: #6247aa;
+  --primary-shade: ;
+  --primary-tint: ;
+
+  --secondary-color: #d1a101;
+  --secondary-shade: #F6BE00;
+  --secondary-tint: ;
+
+  --grey-1: ;
+  --grey-2: ;
+  --grey-3: ;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+/*Anchor Styles*/
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--link-color);
 }
 
 /* Button-Styles*/
 
 .button-primary {
-  background-color: #d1a101;
-  font-family: 'Russo One', sans-serif;
+  background-color: var(--secondary-color);
+  font-family: var(--primary-font);
   font-size: 14px;
-  border: 3px solid #F6BE00;
+  border: 3px solid var(--secondary-shade);
   border-radius: 2px;
   color: #002f3c ;
   box-shadow: 6px 5px 0px 0px #28303D;
   margin-right: 20px;
-  padding: 10px 10px;
+  padding: 5px 10px;
   min-width: 80px;
   opacity: 0.9;
 }
@@ -26,7 +57,7 @@
 /* Paragraph-Styles */
 
 p {
-  font-family: Nunito, sans-serif;
+  font-family: var(--primary-font), sans-serif;
   font-weight: 300;
   font-size: 18px;
   letter-spacing: 0;
@@ -40,7 +71,7 @@ p {
 /* Headline-Styles */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Prompt, sans-serif;
+  font-family: var(--primary-font), sans-serif;
   font-weight: 500;
   letter-spacing: 0.5px;
 
@@ -87,8 +118,8 @@ h6 {
 }
 
 .accent-headline {
-  font-family: 'Russo One', sans-serif;
-  color: #6247aa;
+  font-family: var(--secondary-font), sans-serif;
+  color: var(--primary-color);
   text-transform: lowercase;
   font-size: 18px;
 }
@@ -106,7 +137,7 @@ h6 {
 /* Colors */
 
 .background-accent-color-one {
-  background: #6247aa;
+  background: var(--primary-color);
 }
 
 .background-accent-color-two {
